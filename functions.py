@@ -5,7 +5,7 @@ def print_all():
 
 def find_entry(name):
     d = open('directory.txt', 'r', encoding='utf-8')
-    print(d)
+    #print(d)
     list_of_entries = list()
     for l in d:
         #print(l)
@@ -16,5 +16,6 @@ def find_entry(name):
 
 def add_entry(data):
     d = open('directory.txt', 'a', encoding='utf-8')
-    d.write(' '.join(data)+'\n')
+    d.write(' '.join(data)+ '\n')
     d.close()
+    
